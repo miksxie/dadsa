@@ -1,0 +1,141 @@
+* {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.bar {
+    display: flex;
+    gap: 2px;
+}
+li{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+    padding-right: 2rem;
+    font-weight: bold;
+}
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    background-image: url(greybackground.jpg);
+    color: white;
+    gap: 40px;
+}
+.image {
+    display: flex;
+    justify-content: space-around;
+    background-color: #E5C3A6;
+    height: 480px;
+    padding-top: 50px;
+    padding-left: 280px;
+}
+.mj2 {
+    height: 80%;
+    border-radius: 50px;
+    background: #000;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-right: 300px;
+}
+.h1about {
+    color: #efefef;
+    font-family: Verdana, Arial;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 700;
+    vertical-align: baseline;
+    text-align: center;
+}
+.paragraph {
+    padding-top: 40px;
+    font-size: 30px;
+}
+.made {
+    padding-top: 80px;
+    padding-left: 90px;
+    transform: translateX(-100px);
+}
+.footer {
+    background-color: #02133E;
+    padding-bottom: 115px;
+    padding-top: 100px;
+}
+.paragraph-footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Lexend Giga', Arial; font-weight: 400;
+}
+
+.fa-solid {
+    visibility: hidden;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .bar {
+        display: flex;
+        gap: 2px;
+        display: none;
+    }
+    .fa-solid {
+        visibility: visible;
+        color: white;
+    }
+    .image {
+        display: flex;
+        flex-direction: column;
+        background-color: #E5C3A6;
+        height: auto;
+        padding-top: 0;
+        padding-right: 0;
+        padding: 50px 30px;
+        text-align: center;
+        
+    }
+
+    .made {
+        display: flex;
+        padding-top: 80px;
+        margin-right: 60px;
+        transform: translateX(0);
+        align-items: center;
+    }
+    .mj2 {
+        height: 200px;
+    border-radius: 50px;
+    background: #000;
+    object-fit: cover;
+}
+
+
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+        padding-right: 0;
+    }
+}
+
